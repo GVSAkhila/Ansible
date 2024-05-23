@@ -10,4 +10,4 @@
      msg: "hellow i am learning ansible"
   - name: print varibles
     ansible.builtin.debug:
-     msg: "hellow i am learning {{COURSE}}, Trainer is {{TRAINER}}, Course is {{DURATION}}""
+     msg: "hellow i am learning {{COURSE}}, Trainer is {{TRAINER}}, Course is {{DURATION}}"
