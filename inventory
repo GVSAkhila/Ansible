@@ -1,6 +1,11 @@
 [mongodb]
 roboshop-us-dev-db-mongodb-01.joinsankardevops.online 
 
+[mongodb:vars]
+MANGO_USERNAME=mongodbadmin
+MANGODB=categories
+
+
 [mysql]
 roboshop-us-dev-db-mysql-01.joinsankardevops.online 
 roboshop-us-dev-db-mysql-02.joinsankardevops.online 
@@ -12,6 +17,7 @@ roboshop-in-prod-app-cart-03.joinsankardevops.online
 
 [user]
 roboshop-in-prod-app-user-01.joinsankardevops.online
+roboshop-in-prod-app-user-02.joinsankardevops.online
 
 [db:children]
 mongodb
