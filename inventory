@@ -4,7 +4,7 @@ roboshop-us-dev-db-mongodb-01.joinsankardevops.online
 [mongodb:vars]
 MANGO_USERNAME=mongodbadmin
 MANGODB=categories
-
+NAME: sankar-inventory
 
 [mysql]
 roboshop-us-dev-db-mysql-01.joinsankardevops.online 

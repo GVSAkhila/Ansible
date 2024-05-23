@@ -1,0 +1,27 @@
+---
+- name: testing variable precedence
+  hosts: mongodb
+  vars:
+    NAME: Sankar-play
+  vars_files:
+    - variable.yaml
+  vars_prompt:
+    - name: NAME
+      prompt: "Please enter your name"
+      private: false
+  tasks:
+    - name: variable at task level
+      vars:
+        NAME: sankar-task
+      ansible.builtin.debug:
+        msg: "Trainer Name is: {{ NAME }}"
+
+
+# 1 command line
+# 2 task level
+#3 files
+#4 prompt
+#5 play level
+#6 inventory
+#7 roles
+
